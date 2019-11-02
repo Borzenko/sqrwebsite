@@ -88,6 +88,11 @@ module.exports = {
 			template: PATH.app + '/package.html',
 			chunks: ['vendors~common', 'common']
 		}),
+		new HtmlWebpackPlugin({
+			filename: 'loyalty.html',
+			template: PATH.app + '/loyalty.html',
+			chunks: ['vendors~common', 'common']
+		}),
 	],
 	module: {
 		rules: [
