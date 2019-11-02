@@ -1,385 +1,380 @@
+.main-header-background
+  background-size: cover
+  background-position: center 0
+  background-repeat: no-repeat
+  color: $white
+  display: flex
+  align-items: center
+  margin-bottom: 146px
+
 .hero-section
-	background-size: cover
-	background-position: center
-	background-repeat: no-repeat
-	color: $white
-	padding-top: 20px
-	padding-bottom: 20px
-	display: flex
-	align-items: center
-	position: relative
-	min-height: 70vh
-	margin-bottom: 144px
-	@include bp(1280, min)
-		min-height: 728px
+  position: relative
+  width: 100%
 
-	.logo
-		position: absolute
-		top: 20px
-		left: 10px
-		z-index: 99
-		z-index: 1
-		display: flex
-		align-items: center
-		text-transform: uppercase
-		color: $white
-		@include bp(1280, min)
-			left: 60px
-		@include bp(1440, min)
-			left: 90px
+  .logo
+    position: absolute
+    top: 20px
+    left: 15px
+    z-index: 99
+    z-index: 1
+    display: flex
+    align-items: center
+    text-transform: uppercase
+    color: $white
 
-		img 
+    img 
       margin-right: 10px
 
 
-	.head
-		max-width: max-content
-		font-size: 20px
-		@include bp(1280, min)
-			font-size: 24px
-		.text
-			max-width: 560px
-	.about-row
-		display: flex
-		justify-content: space-between
-		position: absolute
-		bottom: 0
-		padding: 0 10px
-		left: 50%
-		transform: translateX(-50%) translateY(70%)
-		max-width: 962px
-		width: 100%
-		@include bp(1280, min)
-			top: auto 
-			transform: translateX(-50%) translateY(48%)
+  .head
+    max-width: max-content
+    font-size: 24px
+    padding: 12rem 0
+  .about-row
+    display: flex
+    justify-content: space-between
+    position: absolute
+    bottom: 0
+    padding: 0 10px
+    left: 50%
+    transform: translateX(-50%) translateY(70%)
+    max-width: 962px
+    width: 100%
+    @include bp(1280, min)
+      top: auto 
+      transform: translateX(-50%) translateY(48%)
 
 
-		h3
-			margin-bottom: 5px
-			word-break: break-all
+    h3
+      margin-bottom: 5px
+      word-break: break-all
 
-		.about-item
-			color: $gray
-			background-color: $white
-			border-radius: 11px
-			padding: 5px
-			flex: 0 0 calc(33.33% - 8px)
-			max-width: 300px
-			background: #FFFFFF
-			box-shadow: 0 40px 80px 0 rgba(0,0,0,0.10)
-			@include bp(1280, min)
-				padding: 26px 26px 26px 81px
-				position: relative
-				border-radius: 25px
-				flex: 0 0 calc(33.33% - 62px)
-			p
-				text-overflow: ellipsis
-				display: -webkit-box
-				-webkit-line-clamp: 4
-				-webkit-box-orient: vertical
-				overflow: hidden
+    .about-item
+      color: $gray
+      background-color: $white
+      border-radius: 11px
+      padding: 5px
+      flex: 0 0 calc(33.33% - 8px)
+      max-width: 300px
+      background: #FFFFFF
+      box-shadow: 0 40px 80px 0 rgba(0,0,0,0.10)
+      @include bp(768, min)
+        padding: 26px 26px 26px 81px
+        position: relative
+        border-radius: 25px
+        flex: 0 0 calc(33.33% - 62px)
+      p
+        text-overflow: ellipsis
+        display: -webkit-box
+        -webkit-line-clamp: 4
+        -webkit-box-orient: vertical
+        overflow: hidden
 
 
-			svg
-				margin-bottom: 5px
-				@include bp(1280, min)
-					position: absolute
-					left: 15px
-					top: 50%
-					transform: translateY(-50%)
-					height: 50px
-					width: 50px
+      svg
+        margin-bottom: 5px
+        @include bp(768, min)
+          position: absolute
+          left: 15px
+          top: 50%
+          transform: translateY(-50%)
+          height: 50px
+          width: 50px
 
 .ui-info
-	padding-bottom: 20px
-	padding-top: 20px
-	.content
-		@include bp(1440, min)
-			padding: 0 64px
+  padding-bottom: 20px
+  padding-top: 20px
+  .content
+    @include bp(1440, min)
+      padding: 0 64px
 
-	h3
-		margin-bottom: 40px
-		max-width: 700px
-		@include bp(1280, min)
-			margin-bottom: 79px
+  h3
+    margin-bottom: 40px
+    max-width: 700px
+    @include bp(1280, min)
+      margin-bottom: 79px
 
-	.info-row
-		display: flex 
-		flex-wrap: wrap 
-		justify-content: space-between
+  .info-row
+    display: flex 
+    flex-wrap: wrap 
+    justify-content: space-between
 
-		.info-item 
-			flex: 0 0 calc(50% - 12px)
-			margin-bottom: 40px
-			color: $gray
-			max-width: 263px
-			padding-right: 10px
-			@include bp(1280, min)
-				flex: 0 0 calc(25% - 77px)
-				padding-right: 0
+    .info-item 
+      flex: 0 0 calc(50% - 12px)
+      margin-bottom: 40px
+      color: $gray
+      max-width: 263px
+      padding-right: 10px
+      @include bp(1280, min)
+        flex: 0 0 calc(25% - 77px)
+        padding-right: 0
 
-		.number 
-			width: 37px
-			height: 37px
-			border-radius: 50%
-			color: $white 
-			display: flex 
-			align-items: center 
-			justify-content: center
-			margin-bottom: 10px
-			background-image: linear-gradient(-187deg, #FF7000 0%, #FF4000 99%);
-			box-shadow: 0px 11px 60px 0 rgba(230,56,0,0.48)
-			@include bp(1280, min)
-				width: 67px
-				height: 67px
-				margin-bottom: 40px
-		h5
-			margin-bottom: 5px
+    .number 
+      width: 37px
+      height: 37px
+      border-radius: 50%
+      color: $white 
+      display: flex 
+      align-items: center 
+      justify-content: center
+      margin-bottom: 10px
+      background-image: linear-gradient(-187deg, #FF7000 0%, #FF4000 99%);
+      box-shadow: 0px 11px 60px 0 rgba(230,56,0,0.48)
+      @include bp(1280, min)
+        width: 67px
+        height: 67px
+        margin-bottom: 40px
+    h5
+      margin-bottom: 5px
 
 .review-section 
-	padding-bottom: 58px
-	text-align: center
-	@include bp(1280, min)
-		padding-bottom: 73px
+  padding-bottom: 58px
+  text-align: center
+  @include bp(1280, min)
+    padding-bottom: 73px
 
-	.content 
-		padding: 0 25px
-		max-width: 945px 
-		margin: 0 auto
-		line-height: 1.5
-		position: relative
-		overflow: hidden
-		@include bp(1280, min)
-			padding-top: 18px
+  .content 
+    padding: 0 25px
+    max-width: 945px 
+    margin: 0 auto
+    line-height: 1.5
+    position: relative
+    overflow: hidden
+    @include bp(1280, min)
+      padding-top: 18px
 
-	h2
-		color: $black
-		margin-bottom: 20px
-		@include bp(1280, min)
-			margin-bottom: 53px
+  h2
+    color: $black
+    margin-bottom: 20px
+    @include bp(1280, min)
+      margin-bottom: 53px
 
-	.sliders-holder 
-		max-width: 542px
-		margin: 0 auto
-		position: relative
-		overflow: hidden
+  .sliders-holder 
+    max-width: 542px
+    margin: 0 auto
+    position: relative
+    overflow: hidden
 
-	.btn 
-		width: 20px
-		height: 20px
-		position: absolute
-		z-index: 2
-		cursor: pointer
-		&:before, &:after
-			content: ''
-			position: absolute
-			width: 70%
-			border-bottom: 2px solid $orange
-			transform-origin: right
-			right: 0
+  .btn 
+    width: 20px
+    height: 20px
+    position: absolute
+    z-index: 2
+    cursor: pointer
+    &:before, &:after
+      content: ''
+      position: absolute
+      width: 70%
+      border-bottom: 2px solid $orange
+      transform-origin: right
+      right: 0
 
-		&:before
-			top: -1px
-			transform: rotate(-45deg)
+    &:before
+      top: -1px
+      transform: rotate(-45deg)
 
-		&:after
-			bottom: 0
-			transform: rotate(45deg)
+    &:after
+      bottom: 0
+      transform: rotate(45deg)
 
-		&.next 
-			right: 0
-			bottom: 50px
-			transform: rotate(180deg)
+    &.next 
+      right: 0
+      bottom: 50px
+      transform: rotate(180deg)
 
-		&.prev 
-			left: 0
-			bottom: 50px
-		&.disabled
-			&:before, &:after
-				border-color: $gray
+    &.prev 
+      left: 0
+      bottom: 50px
+    &.disabled
+      &:before, &:after
+        border-color: $gray
 
-	.gallery-top 
-		margin-bottom: 20px
-		max-width: 800px
-		@include bp(1280, min)
-			font-weight: 500 
-			font-size: 20px
-			line-height: 1.4
-			margin-bottom: 40px
-	.gallery-thumbs 
-		width: 30%	
-		overflow: visible
-		margin: 0
-		max-width: 150px
-		@include bp(1280, min)
-		.img-holder 
-			overflow: hidden
-			width: 50px
-			height: 50px
-			border-radius: 50%
-			margin: 0 auto 20px
-			box-shadow: 0 10px 9px 0 rgba(0,0,0,0.20)
-			img 
-				object-fit: cover 
-				object-position: center
+  .gallery-top 
+    margin-bottom: 20px
+    max-width: 800px
+    @include bp(1280, min)
+      font-weight: 500 
+      font-size: 20px
+      line-height: 1.4
+      margin-bottom: 40px
+  .gallery-thumbs 
+    width: 30%	
+    overflow: visible
+    margin: 0
+    max-width: 150px
+    @include bp(1280, min)
+    .img-holder 
+      overflow: hidden
+      width: 50px
+      height: 50px
+      border-radius: 50%
+      margin: 0 auto 20px
+      box-shadow: 0 10px 9px 0 rgba(0,0,0,0.20)
+      img 
+        object-fit: cover 
+        object-position: center
 
-		.name
-			color: $gray
-			font-size: 14px 
-			opacity: 0
+    .name
+      color: $gray
+      font-size: 14px 
+      opacity: 0
 
-		.swiper-slide 
-			opacity: 0.6
-			min-height: 94px
-			padding-bottom: 10px
-			cursor: pointer
-			&.active
-				opacity: 1
-				.name
-					opacity: 1
+    .swiper-slide 
+      opacity: 0.6
+      min-height: 94px
+      padding-bottom: 10px
+      cursor: pointer
+      &.active
+        opacity: 1
+        .name
+          opacity: 1
 
 .partners 
-	text-align: center 
+  text-align: center 
 
-	.partners-row
-		padding: 27px 0 
-		display: flex 
-		flex-wrap: wrap
-		justify-content: space-around 
-		.partners-item 
-			flex: 0 0 33.33% 
-			padding: 0 10px 
-			margin-bottom: 20px
-			display: flex 
-			align-items: center
-			justify-content: center
-			max-width: 190px
+  .partners-row
+    padding: 27px 0 
+    display: flex 
+    flex-wrap: wrap
+    justify-content: space-around 
+    .partners-item 
+      flex: 0 0 33.33% 
+      padding: 0 10px 
+      margin-bottom: 20px
+      display: flex 
+      align-items: center
+      justify-content: center
+      max-width: 190px
 
 .map-section 
-	padding-bottom: 45px
-	overflow: hidden
-	@include bp(1280, min)
-		display: flex 
-		align-items: center
-		padding-bottom: 0
+  padding: 0 !important
+  overflow: hidden
+  @include bp(1280, min)
+    display: flex 
+    align-items: center
+    padding-bottom: 0
 
-	.map
-		position: relative
-		padding-top: 100%
-		left: 0
-		box-shadow: 0 30px 60px 0 rgba(0,0,0,0.20);
-		margin: 0 -10px
-		background-size: cover 
-		background-repeat: no-repeat
-		@include bp(1280, min)
-			padding-top: 0
-			height: 705px
-			flex: 0 0 calc(50% + 60px)
-			margin: 0
-			margin-left: -60px
-		@include bp(1440, min)
-			flex: 0 0 calc(50% + 90px)
+  .map
+    position: relative
+    padding-top: 100%
+    left: 0
+    margin: 0 -10px
+    background-size: cover 
+    background-repeat: no-repeat
+    @media screen and (max-width: 1280px)
+      margin: 0
+      
+    @include bp(1280, min)
+      box-shadow: 0 30px 60px 0 rgba(0,0,0,0.20)
+      padding-top: 0
+      height: 705px
+      flex: 0 0 calc(50% + 60px)
+      margin: 0
+      margin-left: -60px
+    @include bp(1440, min)
+      flex: 0 0 calc(50% + 90px)
 
-			margin-left: -90px
-		
+      margin-left: -90px
+    
 
-		.address-holder 
-			font-size: 14px
-			width: 230px
-			border-radius: 5px 
-			padding: 30px
-			position: absolute 
-			z-index: 2
-			top: 20px
-			left: 50%
-			transform: translateX(-50%)
-			background-image: linear-gradient(-187deg, #FF7000 0%, #FF4000 99%)
-			@include bp(1280, min)
-				top: 171px
-			address 
-				font-style: normal
-				font-size: 18px
-				color: #FFFFFF
-				letter-spacing: -0.5px
-				margin-bottom: 5px
+    .address-holder 
+      font-size: 14px
+      width: 230px
+      border-radius: 5px 
+      padding: 30px
+      position: absolute 
+      z-index: 2
+      top: 20px
+      left: 50%
+      transform: translateX(-50%)
+      background-image: linear-gradient(-187deg, #FF7000 0%, #FF4000 99%)
+      @include bp(1280, min)
+        top: 171px
+      address 
+        font-style: normal
+        font-size: 18px
+        color: #FFFFFF
+        letter-spacing: -0.5px
+        margin-bottom: 5px
 
-			a 
-				display: block
-				color: $white 
-				margin-bottom: 5px
-				&:hover 
-					text-decoration: underline
+      a 
+        display: block
+        color: $white 
+        margin-bottom: 5px
+        &:hover 
+          text-decoration: underline
 
-		iframe 
-			position: absolute 
-			top: 0
-			left: 0
-			width: 100%
-			height: 100%
+    iframe 
+      position: absolute 
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
 
-	.form-holder
-		flex: 0 0 50%
-		padding: 45px 0
-		max-width: 550px 
-		margin: 0 auto
-		@include bp(1280, min)
-			padding-left: 30px
-			margin: 0
+  .form-holder
+    flex: 0 0 50%
+    padding: 45px 0
+    max-width: 550px 
+    margin: 0 auto
+    @include bp(1280, min)
+      padding-left: 30px
+      margin: 0
 
-		h2
-			color: $black
-			text-align: center
-			margin-bottom: 21px
-			font-size: 18px
-			@include bp(1280, min)
-				font-size: 48px
+    h2
+      color: $black
+      text-align: center
+      margin-bottom: 21px
+      font-size: 18px
+      @include bp(1280, min)
+        font-size: 48px
 
-		.form-row 
-			display: flex 
-			flex-wrap: wrap
-			justify-content: space-between
-			input 
-				@include bp(1280, min)
-					flex: 0 0 calc(50% - 16px)
-
-
-		input, textarea
-			width: 100%
-			padding: 20px 30px 
-			border-radius: 5px 
-			border: 1px solid $gray 
-			margin-bottom: 21px
-			font-size: 14px
-			color: $light-black
-			resize: none 
-			transition: box-shadow .3s ease 
-			&:focus
-				box-shadow: 0 10px 20px 0 rgba(0,0,0,0.10);
-			&::-webkit-input-placeholder 
-				color: $light-black
-			&::-moz-placeholder
-				color: $light-black
-			&:-moz-placeholder
-				color: $light-black
-			&::-ms-input-placeholder
-				color: $light-black
-
-		.btn-form 
-			margin: 36px auto 0 
-			background-image: linear-gradient(-187deg, #FF7000 0%, #FF4000 99%)
-			font-size: 16px
-			color: $white
-			border-radius: 15px 
-			padding: 15px 55px 
-			max-width: max-content
-			display: block
-			cursor: pointer
-			box-shadow: 20px 20px 60px 0 rgba(230,56,0,0.23)
-			transition: box-shadow .3s ease 
+    .form-row 
+      display: flex 
+      flex-wrap: wrap
+      justify-content: space-between
+      input 
+        @include bp(1280, min)
+          flex: 0 0 calc(50% - 16px)
 
 
-			
-				
+    input, textarea
+      width: 100%
+      padding: 20px 30px 
+      border-radius: 5px 
+      border: 1px solid $gray 
+      margin-bottom: 21px
+      font-size: 14px
+      color: $light-black
+      resize: none 
+      transition: box-shadow .3s ease 
+      &:focus
+        box-shadow: 0 10px 20px 0 rgba(0,0,0,0.10)
+        border-color: transparent
+      &::-webkit-input-placeholder 
+        color: $light-black
+      &::-moz-placeholder
+        color: $light-black
+      &:-moz-placeholder
+        color: $light-black
+      &::-ms-input-placeholder
+        color: $light-black
 
+    .btn-form 
+      margin: 36px auto 0 
+      background-image: linear-gradient(-187deg, #FF7000 0%, #FF4000 99%)
+      font-size: 16px
+      color: $white
+      border-radius: 15px 
+      padding: 15px 55px 
+      max-width: max-content
+      display: block
+      cursor: pointer
+      box-shadow: 20px 20px 60px 0 rgba(230,56,0,0.23)
+      transition: box-shadow .3s ease 
 
+.cloud-section-content
+  display: flex
+  flex-wrap: wrap
+  align-items: center
 
+ 
