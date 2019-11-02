@@ -1409,6 +1409,11 @@ button.swiper-pagination-bullet {
       padding: 10px 90px; } }
   #footer .copy {
     text-align: center; }
+    @media screen and (max-width: 760px) {
+      #footer .copy {
+        width: 100%;
+        display: block;
+        margin: 15px 0; } }
   #footer .logo {
     display: -webkit-box;
     display: -ms-flexbox;
