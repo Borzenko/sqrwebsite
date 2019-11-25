@@ -4,7 +4,7 @@
 set -e
 
 # сборка
-webpack
+npm run prod
 
 # переход в каталог сборки
 cd dist
