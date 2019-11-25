@@ -1460,6 +1460,9 @@ button.swiper-pagination-bullet {
     .cloud-section {
       min-height: 0;
       height: auto;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
       margin: 15px 0 60px; } }
   .cloud-section .cloud-section-text {
     display: -webkit-box;
