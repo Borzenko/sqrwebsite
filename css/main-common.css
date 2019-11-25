@@ -1457,8 +1457,7 @@ button.swiper-pagination-bullet {
   padding: 2% 25px; }
   @media only screen and (max-width: 760px) {
     .cloud-section {
-      min-height: 0;
-      height: auto;
+      max-height: 500px;
       -webkit-box-align: start;
           -ms-flex-align: start;
               align-items: flex-start;
