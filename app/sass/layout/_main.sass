@@ -252,6 +252,9 @@
 .map-section 
   padding: 0 !important
   overflow: hidden
+  @media screen and (max-width: 1280px)
+    overflow: visible
+
   @include bp(768, min)
     align-items: stretch
     display: flex
