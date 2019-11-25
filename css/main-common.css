@@ -775,7 +775,7 @@ button.swiper-pagination-bullet {
   overflow: hidden; }
 
 .section {
-  padding-left: 15px;
+  padding-left: 25px;
   padding-right: 15px;
   max-width: 1280px;
   margin: 0 auto; }
@@ -1452,10 +1452,10 @@ button.swiper-pagination-bullet {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: calc(100vh - 70px);
+  height: calc(100vh - 100px);
   min-height: 500px;
   color: #595F6F;
-  padding: 2% 15px; }
+  padding: 2% 25px; }
   @media only screen and (max-width: 760px) {
     .cloud-section {
       min-height: 0;
@@ -1479,17 +1479,16 @@ button.swiper-pagination-bullet {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 60%;
               flex: 0 0 60%; }
-
-@incbp (1280, min)lude {
-  .cloud-section .col:first-of-type {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 56%;
-            flex: 0 0 56%; } }
+      @media screen and (min-width: 1280px) {
+        .cloud-section .col:first-of-type {
+          -webkit-box-flex: 0;
+              -ms-flex: 0 0 56%;
+                  flex: 0 0 56%; } }
       @media screen and (max-width: 1280px) {
         .cloud-section .col:first-of-type {
           -webkit-box-flex: 0;
-              -ms-flex: 0 0 50%;
-                  flex: 0 0 50%; } }
+              -ms-flex: 0 0 55%;
+                  flex: 0 0 55%; } }
     .cloud-section .col:last-of-type {
       -webkit-box-flex: 1;
           -ms-flex-positive: 1;
@@ -1533,21 +1532,25 @@ button.swiper-pagination-bullet {
     width: 100%;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    -webkit-transition: background,color,border 1s linear;
+    -o-transition: background,color,border 1s linear;
+    transition: background,color,border 1s linear; }
     @media screen and (max-width: 1280px) {
       .cloud-section .buttons-holder .button {
         font-size: 14px;
         margin-bottom: 15px; } }
     .cloud-section .buttons-holder .btn-primary {
       margin-right: 36px; }
-      @media screen and (max-width: 1280px) {
-        .cloud-section .buttons-holder .btn-primary {
-          margin-right: 0px; } }
+    .cloud-section .buttons-holder .active-btn {
+      background: #fff;
+      color: #e63800;
+      border: 1px solid #707070; }
 
 .text-section {
   text-align: center;
   max-width: 700px;
-  margin: 0 auto;
+  margin: 45px auto 0;
   padding: 0 20px 56px;
   color: #637179;
   font-weight: 400; }
