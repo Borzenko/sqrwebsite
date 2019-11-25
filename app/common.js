@@ -59,7 +59,7 @@ script('https://unpkg.com/swiper/js/swiper.min.js', function () {
     }
   })
 
-  panel.on('click', function () {
+  panel.on('click', function (e) {
     Accordion($(this), panel)
   });
 
@@ -91,13 +91,9 @@ script('https://unpkg.com/swiper/js/swiper.min.js', function () {
         .removeClass('active')
         .siblings()
         .slideUp(500)
-        .removeClass('active');
       item
         .parent()
         .removeClass('active');
-      // if (window.matchMedia("(min-width: 1280px)").matches) {
-      //   function RowUp();
-      // }
     }
   }
 
