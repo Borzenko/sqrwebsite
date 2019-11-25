@@ -1463,7 +1463,7 @@ button.swiper-pagination-bullet {
       -webkit-box-align: start;
           -ms-flex-align: start;
               align-items: flex-start;
-      margin: 0px;
+      margin: 15px 0px 60px;
       padding: 0px; } }
   .cloud-section .cloud-section-text {
     display: -webkit-box;
