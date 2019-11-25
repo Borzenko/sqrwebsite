@@ -775,8 +775,7 @@ button.swiper-pagination-bullet {
   overflow: hidden; }
 
 .section {
-  padding-left: 25px;
-  padding-right: 15px;
+  padding: 0 20px;
   max-width: 1280px;
   margin: 0 auto; }
 
@@ -1463,8 +1462,7 @@ button.swiper-pagination-bullet {
       -webkit-box-align: start;
           -ms-flex-align: start;
               align-items: flex-start;
-      margin: 15px 0px 60px;
-      padding: 0px; } }
+      margin: 15px 0px 60px; } }
   .cloud-section .cloud-section-text {
     display: -webkit-box;
     display: -ms-flexbox;
