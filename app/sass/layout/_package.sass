@@ -10,6 +10,7 @@ h2, h3
   min-height: 500px
   color: $light-black
   padding: 2% 25px
+  align-items: stretch
   @media only screen and (max-width: 760px)
     min-height: 0
     // height: auto
@@ -38,10 +39,13 @@ h2, h3
         
     &:last-of-type
       padding-left: 20px
+      width: 45%
+      text-align: center
 
       img
         object-fit: contain
         object-position: center
+        height: calc(100% + 40px)
 
   .text
     @include bp(1280, min)
