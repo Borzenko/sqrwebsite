@@ -1220,6 +1220,9 @@ button.swiper-pagination-bullet {
 .map-section {
   padding: 0 !important;
   overflow: hidden; }
+  @media screen and (max-width: 1280px) {
+    .map-section {
+      overflow: visible; } }
   @media screen and (min-width: 768px) {
     .map-section {
       -webkit-box-align: stretch;
@@ -1454,7 +1457,10 @@ button.swiper-pagination-bullet {
   height: calc(100vh - 100px);
   min-height: 500px;
   color: #595F6F;
-  padding: 2% 25px; }
+  padding: 2% 25px;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch; }
   @media only screen and (max-width: 760px) {
     .cloud-section {
       min-height: 0;
@@ -1490,12 +1496,15 @@ button.swiper-pagination-bullet {
             -ms-flex: 0 0 55%;
                 flex: 0 0 55%; } }
   .cloud-section .col:last-of-type {
-    padding-left: 20px; }
+    padding-left: 20px;
+    width: 45%;
+    text-align: center; }
     .cloud-section .col:last-of-type img {
       -o-object-fit: contain;
          object-fit: contain;
       -o-object-position: center;
-         object-position: center; }
+         object-position: center;
+      height: calc(100% + 40px); }
   @media screen and (min-width: 1280px) {
     .cloud-section .text {
       margin-bottom: 122px; } }
